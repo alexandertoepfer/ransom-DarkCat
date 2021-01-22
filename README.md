@@ -58,7 +58,7 @@ You could also do this with Boost instead of \<filesystem\> but it comes down to
 ## 128-bit Key Generation
 ```c
 std::string randomString( size_t length ) {
-	/* Function returning the charset used */
+    /* Function returning the charset used */
     const auto chset = charset();
     std::default_random_engine rng( std::random_device{}() );
     /* Uniformly distributed values on closed interval */
@@ -96,7 +96,7 @@ std::string stringEncrypt( std::string plain,
     CryptoPP::AES::Encryption aesEncryption( key, CryptoPP::AES::DEFAULT_KEYLENGTH );
     CryptoPP::CBC_Mode_ExternalCipher::Encryption cbcEncryption( aesEncryption, iv );
     CryptoPP::StreamTransformationFilter stfEncryptor( cbcEncryption,
-													   new CryptoPP::StringSink( cipher ) );
+					               new CryptoPP::StringSink( cipher ) );
     stfEncryptor.Put( reinterpret_cast< const unsigned char* >( plain.c_str() ),
 					  plain.length() );
     stfEncryptor.MessageEnd();

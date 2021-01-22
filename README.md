@@ -105,7 +105,7 @@ std::string stringEncrypt( std::string plain,
 ```
 For AES-128 I didn't make my own implementation here because the solution needs to be somewhat fast and reliable, but I can see making an adaptation could help with more AV Evasion in the long run so it's very tempting.
 
-## Virustotal
+## Virustotal (4/70)
 
 ![Preview](virustotal-scan.gif)
 

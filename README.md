@@ -108,3 +108,6 @@ For AES-128 I didn't make my own implementation here because the solution needs 
 ## Virustotal
 
 ![Preview](virustotal-scan.gif)
+
+## Copyright and license
+Code and documentation copyright 2021 Alexander Töpfer. Code released under the MIT License

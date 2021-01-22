@@ -98,7 +98,7 @@ std::string stringEncrypt( std::string plain,
     CryptoPP::StreamTransformationFilter stfEncryptor( cbcEncryption,
 					               new CryptoPP::StringSink( cipher ) );
     stfEncryptor.Put( reinterpret_cast< const unsigned char* >( plain.c_str() ),
-					  plain.length() );
+		      plain.length() );
     stfEncryptor.MessageEnd();
     return cipher;
 }

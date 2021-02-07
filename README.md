@@ -3,7 +3,7 @@
 The author assumes no responsibility or liability for any damages
 caused by the execution of this algorithm, use at your own risk.
 
-# DARKCAT Project - A Strong Prototype Locker
+# DARKCAT Project - A Strong Prototype Crypto-Locker
 Darkcat is an Open Source Crypto-locker directed at an audience with an interest in the field of Cyber Security. The locker is similar to how very obnoxious Ransomwares operate using 2-Layer Key Encryption with the intent of making it almost impossible to recover any key from memory even during the event of Encryption. It utilizes Multi-threaded 128-bit AES Encryption which makes it very fast with the cost of leaving somewhat of a footprint on the CPU for modern activity based Antivirus Softwares to pick up. My Kaspersky didn't detect any suspicious activity in most runs, especially ones that didn't involve lots of files, with that being said the algorithm logs keys on the console but doesn't save any, so use at your own risk.
 ```c
 /*   -0-    ,    *     o    .     *    .    o    .  -O-   '  *  . o
